@@ -1,0 +1,395 @@
+/*-----------------------------------------------------
+                Tamplate Name:Zoyna.
+                Template URL:# .
+                Author Name:Rafiul Alam.
+                Authur URL:#.
+                Tamplate Vershion:1.0 .
+                Description:This is simple Static Website.
+------------------------------------------------------*/
+
+
+/*----------------------------------------------------
+                    Index of Css
+            ----------------------------
+
+            1.Fonts
+            2.Common CSS
+            3.Reusable Component
+            4.Hero
+            
+-----------------------------------------------------*/
+
+
+/*------------------------------------
+                Fonts
+------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Sorts+Mill+Goudy:ital@1&display=swap');
+
+/*------------------------------------
+                Common Css
+------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #fff;
+    font-weight: 400;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    color: #8a8a8a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: #454545;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+h5 {
+    font-size: 2.1rem;
+}
+
+h6 {
+    font-size: 1.8rem;
+}
+
+.subtl {
+    color: #878686;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*------------------------------------
+         Reusable Component
+------------------------------------*/
+
+.botn {
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+section {
+    padding: 9rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+
+/*------------------------------------
+                 Hero
+------------------------------------*/
+
+#header {
+    width: 100%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#header .swiper-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+#header .swiper-header .swiper-slide {
+    height: 100vh;
+    width: 100%;
+}
+
+.slider-1 {
+    background: linear-gradient( rgba(60, 65, 62, 0.397), rgba(160, 236, 194, 0.397)), url(../img/bg.png) no-repeat center /cover;
+}
+
+.slider-2 {
+    background: linear-gradient( rgba(60, 65, 62, 0.397), rgba(160, 236, 194, 0.397)), url(../img/bg2.png) no-repeat center /cover;
+}
+
+.slider-3 {
+    background: linear-gradient( rgba(60, 65, 62, 0.397), rgba(160, 236, 194, 0.397)), url(../img/bg.jpg) no-repeat center /cover;
+}
+
+.slider-4 {
+    background: linear-gradient( rgba(60, 65, 62, 0.397), rgba(160, 236, 194, 0.397)), url(../img/bg2.jpg) no-repeat center /cover;
+}
+
+. .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+}
+
+nav {
+    background-color: #2d2d30;
+    padding: 2rem 0;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000;
+}
+
+.uk-sticky-fixed {
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1.5rem 0;
+}
+
+nav .navlogo {
+    float: left;
+}
+
+nav .menu {
+    float: right;
+}
+
+nav .menu ul li {
+    padding: 1rem;
+}
+
+nav .menu ul li a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.hero-text-box {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.hero-text-box h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.hero-text-box h2 {
+    font-weight: 400;
+    letter-spacing: .1rem;
+    font-size: 2.8rem;
+}
+
+.hero-text-box .botn {
+    border: .1rem solid #fff;
+    background-color: transparent;
+}
+
+.hero-text-box .botn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+/*------------------------------------
+                 About
+------------------------------------*/
+
+#about {
+    background-color: #F7F7F7;
+    ;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    text-align: center;
+}
+
+.about-grid-item .about-imges {
+    margin-bottom: 6rem;
+}
+
+.about-grid .about-grid-item h6 {
+    margin-bottom: 2rem;
+}
+
+.about-grid-item p {
+    text-align: justify;
+}
+
+
+/*------------------------------------
+                 journey
+------------------------------------*/
+
+#journey {
+    background-color: #F1F1F1;
+    text-align: center;
+}
+
+.journey-end {
+    text-align: center;
+}
+
+.jp {
+    margin: auto;
+    width: 60%;
+}
+
+.journey-end p {
+    background-color: transparent;
+}
+
+.journey-end a {
+    margin: 0 2rem;
+}
+
+.bo1 {
+    border: .1rem solid #47474d;
+    background-color: #47474d;
+}
+
+.bo1:hover {
+    color: #47474d;
+    background-color: transparent;
+}
+
+.bo2 {
+    background-color: #82c6bf;
+    border: .1rem solid #82c6bf;
+}
+
+.bo2:hover {
+    color: #82c6bf;
+    background-color: transparent;
+}
+
+
+/*------------------------------------
+                 Projects
+------------------------------------*/
+
+#projects {
+    background-color: #2d2d30;
+}
+
+#projects .section-title {
+    margin-bottom: 4rem;
+}
+
+#projects h5 {
+    color: #fff;
+}
+
+.project-grid-item .botn {
+    border: .1rem solid #fff;
+}
+
+.project-grid-item .botn:hover {
+    background-color: #fff;
+    color: #2d2d30;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+}
+
+.nested-project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+
+/*------------------------------------
+                 Features
+------------------------------------*/
+
+#features {
+    background-color: #f1f1f1;
+}
+
+.nested-f-grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+}
+
+.nested-f-grid .clin-msb {
+    width: 100%;
+}
+
+
+/*------------------------------------
+                 Contact
+------------------------------------*/
+
+#contact {
+    background-color: #f7f7f7;
+}
+
+.bbotn {
+    border: .1rem solid #82c6bf;
+    background-color: #82c6bf;
+    color: #fff;
+}
+
+.bbotn:hover {
+    background-color: transparent;
+    color: #82c6bf;
+}
+
+
+/*------------------------------------
+                 Footer
+------------------------------------*/
+
+#footer {
+    padding: 9rem 0;
+    background-color: #333;
+    text-align: center;
+}
